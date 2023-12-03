@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('payments', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('product');
+            $table->double('price');
+            $table->double('total_due');
             $table->timestamps();
         });
     }
