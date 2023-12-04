@@ -1,0 +1,24 @@
+name: Laravel
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  laravel-tests:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: shivammathur/setup-php@15c43e89cdef867065b0213be354c2841860869e
+      with:
+        username: "u693572706"
+        host: "46.17.172.232"
+        password: "SshKey@13"
+        scripts: 'cd /domains/autopartscjce.com && ./server_deploy.sh'
+        php-version: '8.1'
+    - uses: actions/checkout@v3
+    - name: Directory Permissions
+      run: chmod -R 777 storage bootstrap/cache
