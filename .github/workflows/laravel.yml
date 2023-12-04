@@ -14,3 +14,4 @@ jobs:
         server: ftp.autopartscjce.com
         username: u693572706.autopartscjce
         password: Autopartscjce@13
+        local-dir: /domains/autopartscjce.com/
