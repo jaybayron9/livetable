@@ -4,6 +4,9 @@
             wire:confirm="Are you sure, you want to delete this row(s)?">
         Delete row(s)
     </button>
+    <div>
+        changes here
+    </div>
     <br><br>
     <table border="1">
         <thead>
