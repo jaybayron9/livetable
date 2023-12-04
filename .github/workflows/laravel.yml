@@ -16,8 +16,8 @@ jobs:
       - name: Deploy to server
         uses: appleboy/ssh-action@master
         with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          port: ${{ secrets.PORT }}
-          key: ${{ secrets.SSHKEY }}
-          script: "cd /domains/autopartscjce.com && ./deploy.sh"
+          host: 46.17.172.232
+          username: u693572706
+          port: 65002
+          key: AUIDNACKat5m66VIqYLUevBw7WKahGoW9aRDqDa6b3I
+          script: "cd /domains/autopartscjce.com && deploy.sh" 
