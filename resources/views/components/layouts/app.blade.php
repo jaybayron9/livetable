@@ -6,6 +6,7 @@
 
         <title>{{ $title ?? 'Page Title' }}</title>
 
+        @vite('resources/css/app.css')
         @livewireStyles
     </head>
     <body>
